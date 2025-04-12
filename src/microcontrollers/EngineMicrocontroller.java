@@ -105,7 +105,7 @@ public class EngineMicrocontroller implements Microcontroller {
     private void sendToBus(String sensorId, double value) {
         if (busDelegate.isConnected()) {
             String message = String.format("{\"sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
-            busDelegate.send("ProxyAnalyzer", message);
+            busDelegate.send("MainAnalyzer", message);
         }
     }
 
@@ -114,7 +114,7 @@ public class EngineMicrocontroller implements Microcontroller {
         if (busDelegate.isConnected()) {
             String errorMsg = String.format("{\"error\":\"%s\",\"sensor\":\"%s\"}",
                     e.getMessage(), sensorId);
-            busDelegate.send("ProxyAnalyzer", errorMsg);
+            busDelegate.send("MainAnalyzer", errorMsg);
         }
     }
 
@@ -129,7 +129,7 @@ public class EngineMicrocontroller implements Microcontroller {
     public void handleCriticalEvent(Sensor sensor, double value) {
         String alert = String.format("CRITICAL: %s=%.2f", sensor.getType(), value);
         if (busDelegate.isConnected()) {
-            busDelegate.send("ProxyAnalyzer", alert);
+            busDelegate.send("MainAnalyzer", alert);
         }
     }
 }

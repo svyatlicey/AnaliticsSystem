@@ -6,13 +6,12 @@ import java.util.Random;
 import storage.StorageDevice;
 public class ProxyLogAnalyzer implements LogAnalyzer {
     private final LogAnalyzer targetAnalyzer;
-    private final String deviceId;
-    private final Random random = new Random();
-    private CommunicationInterface bus;
 
-    public ProxyLogAnalyzer(LogAnalyzer target, String id) {
+    private final Random random = new Random();
+
+
+    public ProxyLogAnalyzer(LogAnalyzer target) {
         this.targetAnalyzer = target;
-        this.deviceId = id;
     }
 
     @Override
@@ -37,21 +36,17 @@ public class ProxyLogAnalyzer implements LogAnalyzer {
 
     @Override
     public String getDeviceId() {
-        return deviceId;
+        return targetAnalyzer.getDeviceId();
     }
 
     @Override
     public void connectToBus(CommunicationInterface bus) {
-        this.bus = bus;
-        bus.registerDevice(this);
+        targetAnalyzer.connectToBus(bus);
     }
 
     @Override
     public void disconnectFromBus() {
-        if(bus != null) {
-            bus.unregisterDevice(deviceId);
-            bus = null;
-        }
+        targetAnalyzer.disconnectFromBus();
     }
 
     // Делегированные методы

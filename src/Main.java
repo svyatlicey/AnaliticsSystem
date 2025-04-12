@@ -12,8 +12,8 @@ public class Main {
         CANBus canBus = new CANBus();
         SDCard sdCard = new SDCard();
 
-        BasicLogAnalyzer mainAnalyzer = new BasicLogAnalyzer();
-        ProxyLogAnalyzer proxyAnalyzer = new ProxyLogAnalyzer(mainAnalyzer, "ProxyAnalyzer"); // Исправленный ID
+        BasicLogAnalyzer mainAnalyzer = new BasicLogAnalyzer("MainAnalyzer");
+        ProxyLogAnalyzer proxyAnalyzer = new ProxyLogAnalyzer(mainAnalyzer); // Исправленный ID
 
         EngineMicrocontroller engineController = new EngineMicrocontroller("Engine-01");
         PowerController powerController = new PowerController("Power-01");
@@ -49,7 +49,7 @@ public class Main {
 
         System.out.println("\n=== Запуск диагностики ===");
 
-        // Имитация работы системы (10 циклов)
+        // Имитация работы системы (5 циклов)
         for(int i = 0; i < 5; i++) {
             System.out.println("\nЦикл диагностики #" + (i+1));
 

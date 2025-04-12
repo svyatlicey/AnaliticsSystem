@@ -113,7 +113,7 @@ public class PowerController implements Microcontroller {
     private void sendToBus(String sensorId, double value) {
         if (busDelegate.isConnected()) {
             String message = String.format("{\"power_sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
-            busDelegate.send("ProxyAnalyzer", message);
+            busDelegate.send("MainAnalyzer", message);
         }
     }
 
@@ -122,7 +122,7 @@ public class PowerController implements Microcontroller {
         if (busDelegate.isConnected()) {
             String errorMsg = String.format("{\"power_error\":\"%s\",\"sensor\":\"%s\"}",
                     e.getMessage(), sensorId);
-            busDelegate.send("ProxyAnalyzer", errorMsg);
+            busDelegate.send("MainAnalyzer", errorMsg);
         }
     }
 
@@ -137,7 +137,7 @@ public class PowerController implements Microcontroller {
     public void handleCriticalEvent(Sensor sensor, double value) {
         String alert = String.format("POWER_CRITICAL: %s=%.2f", sensor.getType(), value);
         if (busDelegate.isConnected()) {
-            busDelegate.send("ProxyAnalyzer", alert);
+            busDelegate.send("MainAnalyzer", alert);
         }
     }
 

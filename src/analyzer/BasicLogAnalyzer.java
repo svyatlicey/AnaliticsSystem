@@ -1,6 +1,7 @@
 package analyzer;
 
 import communication.BusDevice;
+import communication.BusDeviceDelegate;
 import communication.CommunicationInterface;
 import storage.StorageDevice;
 import storage.StorageException;
@@ -10,8 +11,12 @@ import java.util.List;
 
 public class BasicLogAnalyzer implements LogAnalyzer {
     private final List<String> logs = new ArrayList<>();
-    private final String deviceId = "MainAnalyzer";
-    private CommunicationInterface bus;
+    private final BusDeviceDelegate busDeviceDelegate;
+
+    public BasicLogAnalyzer(String deviceId) {
+        this.busDeviceDelegate = new BusDeviceDelegate(deviceId,this::handleMessage);
+    }
+
 
     @Override
     public void analyze(String rawData) {
@@ -47,8 +52,8 @@ public class BasicLogAnalyzer implements LogAnalyzer {
     }
 
     // Реализация BusDevice
-    @Override public String getDeviceId() { return deviceId; }
-    @Override public void connectToBus(CommunicationInterface bus) { this.bus = bus; }
-    @Override public void disconnectFromBus() { this.bus = null; }
+    @Override public String getDeviceId() { return busDeviceDelegate.getDeviceId(); }
+    @Override public void connectToBus(CommunicationInterface bus) { busDeviceDelegate.connectToBus(bus); }
+    @Override public void disconnectFromBus() { busDeviceDelegate.disconnectFromBus(); }
     @Override public void handleMessage(String message) {} // Не используется напрямую
 }
