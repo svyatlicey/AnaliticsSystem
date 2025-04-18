@@ -97,14 +97,14 @@ public class EngineMicrocontroller implements Microcontroller {
         Threshold threshold = thresholds.get(sensor.getType());
         if (threshold != null && threshold.isCritical(value)) {
             handleCriticalEvent(sensor, value);
-            System.out.printf("[MCU] %s: критическое значение %.2f от датчика %s%n",
+            System.out.printf("[ENG] %s: критическое значение %.2f от датчика %s%n",
                     getDeviceId(), value, sensorId);
         }
     }
 
     private void sendToBus(String sensorId, double value) {
         if (busDelegate.isConnected()) {
-            String message = String.format("{\"sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
+            String message = String.format("{\"engine_sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
             busDelegate.send("MainAnalyzer", message);
         }
     }
@@ -131,5 +131,18 @@ public class EngineMicrocontroller implements Microcontroller {
         if (busDelegate.isConnected()) {
             busDelegate.send("MainAnalyzer", alert);
         }
+    }
+    @Override
+    public void add(Microcontroller microcontroller){
+        throw new UnsupportedOperationException("EngineMicrocontroller is a leaf node");
+    }
+
+    @Override
+    public void remove(Microcontroller microcontroller) {
+        throw new UnsupportedOperationException("EngineMicrocontroller is a leaf node");
+    }
+    @Override
+    public Microcontroller getMicrocontroller(int index) {
+        throw new UnsupportedOperationException("EngineMicrocontroller is a leaf node");
     }
 }

@@ -41,4 +41,21 @@ public interface Microcontroller extends BusDevice {
      * @param value зафиксированное значение
      */
     void handleCriticalEvent(Sensor sensor, double value);
+
+    /**
+     * Добавление микроконтроллера в систему
+     * @param microcontroller Микроконтроллер добавляемый в систему
+    */
+    void add(Microcontroller microcontroller);
+    /**
+     * Удаление микроконтроллера из системы
+     * @param microcontroller Микроконтроллер удаляемый из системы
+    */
+    void remove(Microcontroller microcontroller);
+
+    /**
+     *Возвращает микроконтроллер по индексу
+     * @param index Индекс микроконтроллера
+     */
+    Microcontroller getMicrocontroller(int index);
 }

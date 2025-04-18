@@ -1,3 +1,76 @@
 === Диагностический отчет ===
-Всего событий: 0
+Всего событий: 73
 
+• {"engine_sensor":"EngineTemp","value":104,04}
+• CRITICAL: CoolantTempSensor=276,90
+• {"engine_sensor":"CoolantTempSensor","value":276,90}
+• CRITICAL: KnockSensor=9,43
+• {"engine_sensor":"KnockSensor","value":9,43}
+• {"engine_sensor":"EngineRpmSensor","value":2974,33}
+• CRITICAL: OilPressureSensor=5,82
+• {"engine_sensor":"OilPressureSensor","value":5,82}
+• POWER_CRITICAL: EngineTemp=149,81
+• {"power_sensor":"EngineTemp","value":149,81}
+• POWER_CRITICAL: IonCurrentSensor=4,46
+• {"power_sensor":"IonCurrentSensor","value":4,46}
+• POWER_CRITICAL: GeneratorCurrentSensor=18,49
+• {"power_sensor":"GeneratorCurrentSensor","value":18,49}
+• {"power_sensor":"EngineRpmSensor","value":3868,33}
+• {"power_sensor":"BatteryVoltageSensor","value":12,71}
+• {"power_sensor":"InjectorCurrentSensor","value":2,27}
+• CRITICAL: EngineTemp=24,40
+• {"engine_sensor":"EngineTemp","value":24,40}
+• CRITICAL: CoolantTempSensor=344,04
+• {"engine_sensor":"CoolantTempSensor","value":344,04}
+• {"error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"engine_sensor":"EngineRpmSensor","value":3482,33}
+• {"error":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• POWER_CRITICAL: EngineTemp=122,95
+• {"power_sensor":"EngineTemp","value":122,95}
+• {"power_sensor":"IonCurrentSensor","value":2,78}
+• POWER_CRITICAL: GeneratorCurrentSensor=14,42
+• {"power_sensor":"GeneratorCurrentSensor","value":14,42}
+• {"power_sensor":"EngineRpmSensor","value":5109,33}
+• {"power_sensor":"BatteryVoltageSensor","value":11,66}
+• {"power_sensor":"InjectorCurrentSensor","value":1,00}
+• CRITICAL: EngineTemp=126,30
+• {"engine_sensor":"EngineTemp","value":126,30}
+• CRITICAL: CoolantTempSensor=279,10
+• {"engine_sensor":"CoolantTempSensor","value":279,10}
+• {"engine_sensor":"KnockSensor","value":5,87}
+• {"engine_sensor":"EngineRpmSensor","value":5275,00}
+• {"engine_sensor":"OilPressureSensor","value":2,96}
+• {"power_sensor":"EngineTemp","value":98,94}
+• {"power_sensor":"IonCurrentSensor","value":1,90}
+• {"power_sensor":"GeneratorCurrentSensor","value":85,96}
+• {"power_sensor":"EngineRpmSensor","value":6409,33}
+• {"power_error":"Ошибка датчика напряжения АКБ","sensor":"BatteryVoltageSensor"}
+• {"power_error":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• CRITICAL: EngineTemp=58,79
+• {"engine_sensor":"EngineTemp","value":58,79}
+• {"error":"Ошибка датчика температуры охлаждающей жидкости","sensor":"CoolantTempSensor"}
+• {"engine_sensor":"KnockSensor","value":6,77}
+• {"engine_sensor":"EngineRpmSensor","value":4920,67}
+• CRITICAL: OilPressureSensor=5,71
+• {"engine_sensor":"OilPressureSensor","value":5,71}
+• POWER_CRITICAL: EngineTemp=0,61
+• {"power_sensor":"EngineTemp","value":0,61}
+• {"power_sensor":"IonCurrentSensor","value":2,35}
+• {"power_sensor":"GeneratorCurrentSensor","value":80,37}
+• {"power_sensor":"EngineRpmSensor","value":3810,00}
+• {"power_error":"Ошибка датчика напряжения АКБ","sensor":"BatteryVoltageSensor"}
+• {"power_sensor":"InjectorCurrentSensor","value":2,06}
+• CRITICAL: EngineTemp=45,42
+• {"engine_sensor":"EngineTemp","value":45,42}
+• {"error":"Ошибка датчика температуры охлаждающей жидкости","sensor":"CoolantTempSensor"}
+• {"engine_sensor":"KnockSensor","value":2,14}
+• {"engine_sensor":"EngineRpmSensor","value":4576,67}
+• {"error":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• POWER_CRITICAL: EngineTemp=77,80
+• {"power_sensor":"EngineTemp","value":77,80}
+• {"power_error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"power_sensor":"GeneratorCurrentSensor","value":63,24}
+• POWER_CRITICAL: EngineRpmSensor=6976,33
+• {"power_sensor":"EngineRpmSensor","value":6976,33}
+• {"power_sensor":"BatteryVoltageSensor","value":12,63}
+• {"power_sensor":"InjectorCurrentSensor","value":1,64}

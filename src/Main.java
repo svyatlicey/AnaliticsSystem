@@ -1,8 +1,9 @@
 import analyzer.*;
-
 import communication.*;
 import microcontrollers.*;
 import sensors.*;
+import sensors.legosySensors.*;
+import sensors.newSensors.*;
 import storage.*;
 
 public class Main {
@@ -12,14 +13,17 @@ public class Main {
         CANBus canBus = new CANBus();
         SDCard sdCard = new SDCard();
 
-        BasicLogAnalyzer mainAnalyzer = new BasicLogAnalyzer("MainAnalyzer");
-        ProxyLogAnalyzer proxyAnalyzer = new ProxyLogAnalyzer(mainAnalyzer); // Исправленный ID
+        // Создание цепочки анализаторов (Декоратор + Прокси)
+        BasicLogAnalyzer basicAnalyzer = new BasicLogAnalyzer("MainAnalyzer");
+        LogAnalyzer decoratedAnalyzer = new PredictLogAnalyzer(basicAnalyzer);
+        ProxyLogAnalyzer proxyAnalyzer = new ProxyLogAnalyzer(decoratedAnalyzer);
 
+        // Создание микроконтроллеров и объединение в группу (Компоновщик)
         EngineMicrocontroller engineController = new EngineMicrocontroller("Engine-01");
         PowerController powerController = new PowerController("Power-01");
+        MicrocontrollerGroup controllersGroup = new MicrocontrollerGroup(engineController, powerController);
 
         try {
-            // Инициализация SD карты
             sdCard.initialize();
             System.out.println("SD карта инициализирована");
         } catch (StorageException e) {
@@ -27,68 +31,81 @@ public class Main {
             return;
         }
 
-        // Подключение устройств к шине
+        // Подключение к шине
         canBus.connect();
-        engineController.connectToBus(canBus);
-        powerController.connectToBus(canBus);
+        controllersGroup.connectToBus(canBus);
         proxyAnalyzer.connectToBus(canBus);
 
-        // Добавление всех датчиков
-        engineController.addSensor(new CoolantTemperatureSensor());
-        engineController.addSensor(new OilPressureSensor());
-        engineController.addSensor(new EngineRpmSensor());
-        engineController.addSensor(new KnockSensor());
+        // 1. Конфигурация датчиков
+        // Создание группы датчиков RPM (Компоновщик)
+        Sensor rpm1 = new EngineRpmSensor();
+        Sensor rpm2 = new EngineRpmSensor();
+        Sensor rpm3 = new EngineRpmSensor();
+        SensorGroup rpmGroup = new SensorGroup(rpm1, rpm2, rpm3);
 
-        powerController.addSensor(new GeneratorCurrentSensor());
-        powerController.addSensor(new InjectorCurrentSensor());
-        powerController.addSensor(new IonCurrentSensor());
-        powerController.addSensor(new BatteryVoltageSensor());
+        // Создание и адаптация устаревшего датчика (Адаптер)
+        AnalogTemperatureSensor legacyTempSensor = new AnalogTemperatureSensor();
+        Sensor adaptedSensor = new AnalogSensorAdapter(
+                legacyTempSensor,
+                30.0,
+                "EngineTemp"
+        );
 
-        // Установка пороговых значений
-        setThresholds(engineController, powerController);
+        // Подключение датчиков
+        // Общие датчики через группу
+        controllersGroup.addSensor(rpmGroup);
+        controllersGroup.addSensor(adaptedSensor);
+
+        // Уникальные датчики через конкретные контроллеры
+        //EngineController
+        controllersGroup.getMicrocontroller(0).addSensor(new CoolantTemperatureSensor());
+        controllersGroup.getMicrocontroller(0).addSensor(new OilPressureSensor());
+        controllersGroup.getMicrocontroller(0).addSensor(new KnockSensor());
+        //PowerController
+        controllersGroup.getMicrocontroller(1).addSensor(new GeneratorCurrentSensor());
+        controllersGroup.getMicrocontroller(1).addSensor(new InjectorCurrentSensor());
+        controllersGroup.getMicrocontroller(1).addSensor(new IonCurrentSensor());
+        controllersGroup.getMicrocontroller(1).addSensor(new BatteryVoltageSensor());
+
+        // 2. Установка пороговых значений
+        // Общие настройки через группу
+        controllersGroup.setThresholds("EngineRpmSensor", 1500, 6500);
+        controllersGroup.setThresholds("EngineTemp", 80, 110);
+
+        // Индивидуальные настройки
+        engineController.setThresholds("CoolantTempSensor", 353, 383);
+        engineController.setThresholds("OilPressureSensor", 2.0, 5.0);
+        engineController.setThresholds("KnockSensor", 0, 8.0);
+
+        powerController.setThresholds("GeneratorCurrentSensor", 30, 100);
+        powerController.setThresholds("InjectorCurrentSensor", 1.0, 4.5);
+        powerController.setThresholds("IonCurrentSensor", 1.0, 4.0);
+        powerController.setThresholds("BatteryVoltageSensor", 11.5, 14.8);
 
         System.out.println("\n=== Запуск диагностики ===");
 
-        // Имитация работы системы (5 циклов)
+        // Имитация работы системы
         for(int i = 0; i < 5; i++) {
             System.out.println("\nЦикл диагностики #" + (i+1));
 
-            engineController.processSensorData();
-            powerController.processSensorData();
-
+            controllersGroup.processSensorData();
             canBus.processMessages();
             Thread.sleep(1000);
         }
 
         // Сохранение отчета
         try {
-            boolean success = mainAnalyzer.saveReport(sdCard, "diagnostics/report.txt");
+            boolean success = decoratedAnalyzer.saveReport(sdCard, "diagnostics/report.txt");
             if(success) {
-                System.out.println("\nОтчет успешно сохранен на SD карту");
+                System.out.println("\nОтчет сохранен с прогнозами: " +
+                        decoratedAnalyzer.generateReport());
             }
         } catch (Exception e) {
-            System.err.println("Ошибка сохранения отчета: " + e.getMessage());
+            System.err.println("Ошибка сохранения: " + e.getMessage());
         }
 
         // Отключение устройств
-        engineController.disconnectFromBus();
-        powerController.disconnectFromBus();
+        controllersGroup.disconnectFromBus();
         canBus.disconnect();
-    }
-
-    private static void setThresholds(EngineMicrocontroller engine, PowerController power) {
-        // Пороги для двигателя
-        engine.setThresholds("CoolantTempSensor", 353, 383); // 80-110°C (273+80=353, 273+110=383)
-        engine.setThresholds("OilPressureSensor", 2.0, 5.0); // 2.0-5.0 bar
-        engine.setThresholds("EngineRpmSensor", 1500, 6500); // RPM
-        engine.setThresholds("KnockSensor", 0, 8.0); // Уровень детонации
-
-        // Пороги для системы питания
-        power.setThresholds("GeneratorCurrentSensor", 30, 100); // 30-100A
-        power.setThresholds("InjectorCurrentSensor", 1.0, 4.5); // 1.0-4.5A
-        power.setThresholds("IonCurrentSensor", 1.0, 4.0); // 1.0-4.0mA
-        power.setThresholds("BatteryVoltageSensor", 11.5, 14.8); // 11.5-14.8V
-
-        System.out.println("Пороговые значения установлены");
     }
 }

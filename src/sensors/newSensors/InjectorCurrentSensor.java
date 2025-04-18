@@ -1,4 +1,7 @@
-package sensors;
+package sensors.newSensors;
+
+import sensors.Sensor;
+import sensors.SensorException;
 
 import java.util.Random;
 
@@ -21,5 +24,18 @@ public class InjectorCurrentSensor implements Sensor {
     @Override
     public String getType() {
         return "InjectorCurrentSensor";
+    }
+    @Override
+    public void add(Sensor sensor){
+        throw new UnsupportedOperationException("InjectorCurrentSensor is a leaf node");
+    }
+
+    @Override
+    public void remove(Sensor sensor) {
+        throw new UnsupportedOperationException("InjectorCurrentSensor is a leaf node");
+    }
+    @Override
+    public Sensor getSensor(int index) {
+        throw new UnsupportedOperationException("InjectorCurrentSensor is a leaf node");
     }
 }

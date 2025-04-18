@@ -14,7 +14,7 @@ public class BasicLogAnalyzer implements LogAnalyzer {
     private final BusDeviceDelegate busDeviceDelegate;
 
     public BasicLogAnalyzer(String deviceId) {
-        this.busDeviceDelegate = new BusDeviceDelegate(deviceId,this::handleMessage);
+        this.busDeviceDelegate = new BusDeviceDelegate(deviceId,this::analyze);
     }
 
 

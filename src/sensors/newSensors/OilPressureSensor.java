@@ -1,4 +1,7 @@
-package sensors;
+package sensors.newSensors;
+
+import sensors.Sensor;
+import sensors.SensorException;
 
 import java.util.Random;
 
@@ -22,5 +25,17 @@ public class OilPressureSensor implements Sensor {
     @Override
     public String getType() {
         return "OilPressureSensor";
+    }
+    public void add(Sensor sensor){
+        throw new UnsupportedOperationException("OilPressureSensor is a leaf node");
+    }
+
+    @Override
+    public void remove(Sensor sensor) {
+        throw new UnsupportedOperationException("OilPressureSensor is a leaf node");
+    }
+    @Override
+    public Sensor getSensor(int index) {
+        throw new UnsupportedOperationException("OilPressureSensor is a leaf node");
     }
 }

@@ -149,4 +149,17 @@ public class PowerController implements Microcontroller {
                     getDeviceId(), sensorType, offset);
         }
     }
+    @Override
+    public void add(Microcontroller microcontroller){
+        throw new UnsupportedOperationException("PowerController is a leaf node");
+    }
+
+    @Override
+    public void remove(Microcontroller microcontroller) {
+        throw new UnsupportedOperationException("PowerController is a leaf node");
+    }
+    @Override
+    public Microcontroller getMicrocontroller(int index) {
+        throw new UnsupportedOperationException("PowerController is a leaf node");
+    }
 }

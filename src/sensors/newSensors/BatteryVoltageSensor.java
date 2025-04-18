@@ -1,4 +1,7 @@
-package sensors;
+package sensors.newSensors;
+
+import sensors.Sensor;
+import sensors.SensorException;
 
 import java.util.Random;
 
@@ -26,5 +29,18 @@ public class BatteryVoltageSensor implements Sensor {
     @Override
     public String getType() {
         return "BatteryVoltageSensor";
+    }
+    @Override
+    public void add(Sensor sensor){
+        throw new UnsupportedOperationException("BatteryVoltageSensor is a leaf node");
+    }
+
+    @Override
+    public void remove(Sensor sensor) {
+        throw new UnsupportedOperationException("BatteryVoltageSensor is a leaf node");
+    }
+    @Override
+    public Sensor getSensor(int index) {
+        throw new UnsupportedOperationException("BatteryVoltageSensor is a leaf node");
     }
 }

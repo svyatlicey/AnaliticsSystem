@@ -20,9 +20,9 @@ public class ProxyLogAnalyzer implements LogAnalyzer {
         String modifiedMessage = message;
         if(random.nextDouble() < 0.1) {
             modifiedMessage = corruptMessage(message);
-            System.out.println("[Proxy] Искажено сообщение: " + message + " -> " + modifiedMessage);
+            System.out.println("[ProxyAnalyzer] Искажено сообщение: " + message + " -> " + modifiedMessage);
         }
-
+        System.out.println("Doshlo");
         targetAnalyzer.analyze(modifiedMessage);
     }
 

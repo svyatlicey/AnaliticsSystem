@@ -1,4 +1,7 @@
-package sensors;
+package sensors.newSensors;
+
+import sensors.Sensor;
+import sensors.SensorException;
 
 import java.util.Random;
 
@@ -21,5 +24,18 @@ public class GeneratorCurrentSensor implements Sensor {
     @Override
     public String getType() {
         return "GeneratorCurrentSensor";
+    }
+    @Override
+    public void add(Sensor sensor){
+        throw new UnsupportedOperationException("GeneratorCurrentSensor is a leaf node");
+    }
+
+    @Override
+    public void remove(Sensor sensor) {
+        throw new UnsupportedOperationException("GeneratorCurrentSensor is a leaf node");
+    }
+    @Override
+    public Sensor getSensor(int index) {
+        throw new UnsupportedOperationException("GeneratorCurrentSensor is a leaf node");
     }
 }
