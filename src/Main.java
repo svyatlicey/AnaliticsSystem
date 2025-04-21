@@ -41,8 +41,12 @@ public class Main {
         Sensor rpm1 = new EngineRpmSensor();
         Sensor rpm2 = new EngineRpmSensor();
         Sensor rpm3 = new EngineRpmSensor();
-        SensorGroup rpmGroup = new SensorGroup(rpm1, rpm2, rpm3);
-
+        Sensor rpm4 = new EngineRpmSensor();
+        SensorGroup rpmGroup = new SensorGroup(rpm1, rpm2);
+        SensorGroup rpmGroup2 = new SensorGroup(rpm3,rpm4,rpmGroup);
+        for(Sensor sensor: rpmGroup2) {
+            System.out.println(sensor.getType());
+        }
         // Создание и адаптация устаревшего датчика (Адаптер)
         AnalogTemperatureSensor legacyTempSensor = new AnalogTemperatureSensor();
         Sensor adaptedSensor = new AnalogSensorAdapter(
@@ -53,7 +57,7 @@ public class Main {
 
         // Подключение датчиков
         // Общие датчики через группу
-        controllersGroup.addSensor(rpmGroup);
+        controllersGroup.addSensor(rpmGroup2);
         controllersGroup.addSensor(adaptedSensor);
 
         // Уникальные датчики через конкретные контроллеры

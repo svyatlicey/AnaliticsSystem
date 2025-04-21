@@ -1,9 +1,6 @@
 package sensors;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class SensorGroup implements Sensor, Iterable<Sensor>{
     private List<Sensor> sensors;
@@ -88,11 +85,35 @@ public class SensorGroup implements Sensor, Iterable<Sensor>{
     }
 
     private class SensorIterator implements Iterator<Sensor> {
-        private int currentIndex = 0;
+        private Deque<Iterator<Sensor>> deque = new ArrayDeque<>();
+        private Sensor nextSensor = null;
+
+        public SensorIterator() {
+            deque.push(sensors.iterator());
+            findNext();
+        }
+
+        private void findNext() {
+            while (!deque.isEmpty()) {
+                Iterator<Sensor> iterator = deque.peek();
+                if (iterator.hasNext()) {
+                    Sensor sensor = iterator.next();
+                    if (sensor instanceof SensorGroup) {
+                        deque.push(((SensorGroup) sensor).iterator());
+                    } else {
+                        nextSensor = sensor;
+                        return;
+                    }
+                } else {
+                    deque.pop();
+                }
+            }
+            nextSensor = null;
+        }
 
         @Override
         public boolean hasNext() {
-            return currentIndex < sensors.size();
+            return nextSensor != null;
         }
 
         @Override
@@ -100,15 +121,14 @@ public class SensorGroup implements Sensor, Iterable<Sensor>{
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            return sensors.get(currentIndex++);
+            Sensor result = nextSensor;
+            findNext();
+            return result;
         }
 
         @Override
         public void remove() {
-            if (currentIndex <= 0) {
-                throw new IllegalStateException();
-            }
-            sensors.remove(--currentIndex);
+            throw new UnsupportedOperationException();
         }
     }
 
