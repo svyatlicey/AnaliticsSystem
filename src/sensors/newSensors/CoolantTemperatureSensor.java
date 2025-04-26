@@ -2,13 +2,19 @@ package sensors.newSensors;
 
 import sensors.Sensor;
 import sensors.SensorException;
+import sensors.SensorType;
+import sensors.SensorTypeFactory;
 
 import java.util.Random;
 
 public class CoolantTemperatureSensor implements Sensor {
+    private final SensorType type;
     private final Random random = new Random();
     private double calibrationOffset = 0;
 
+    public CoolantTemperatureSensor() {
+        this.type = SensorTypeFactory.getType("CoolantTempSensor");
+    }
     @Override
     public double getValue() throws SensorException {
         // 10% chance of sensor failure
@@ -17,18 +23,18 @@ public class CoolantTemperatureSensor implements Sensor {
         }
 
         // Generate temperature between 273K (0°C) and 373K (100°C)
-        return 273 + random.nextDouble() * 100 + calibrationOffset;
+        return 273 + random.nextDouble() * 100 - calibrationOffset;
     }
 
     @Override
     public void calibrate(double offset) {
         this.calibrationOffset = offset;
-        System.out.println("Калибровка датчика температуры: смещение " + offset + "K");
+        System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");
     }
 
     @Override
     public String getType() {
-        return "CoolantTempSensor";
+        return type.getName();
     }
     @Override
     public void add(Sensor sensor){

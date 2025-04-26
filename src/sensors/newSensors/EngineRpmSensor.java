@@ -2,23 +2,32 @@ package sensors.newSensors;
 
 import sensors.Sensor;
 import sensors.SensorException;
+import sensors.SensorType;
+import sensors.SensorTypeFactory;
 
 import java.util.Random;
 
 public class EngineRpmSensor implements Sensor {
     private final Random random = new Random();
+    private  double calibrationOffset = 0;
+    private final SensorType type;
+
+    public EngineRpmSensor() {
+        this.type = SensorTypeFactory.getType("EngineRpmSensor");
+    }
 
     @Override
     public double getValue() throws SensorException {
         if(random.nextDouble() < 0.1) { // 10% chance of error
             throw new SensorException("Engine RPM Sensor malfunction!");
         }
-        return random.nextInt(7000) + 1000;
+        return random.nextInt(7000) + 1000 - calibrationOffset;
     }
 
     @Override
     public void calibrate(double offset) {
-        System.out.println("Calibrating Engine RPM Sensor with offset: " + offset);
+        this.calibrationOffset = offset;
+        System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");
     }
 
     @Override

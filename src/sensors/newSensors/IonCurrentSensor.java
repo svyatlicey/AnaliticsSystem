@@ -2,12 +2,19 @@ package sensors.newSensors;
 
 import sensors.Sensor;
 import sensors.SensorException;
+import sensors.SensorType;
+import sensors.SensorTypeFactory;
 
 import java.util.Random;
 
 public class IonCurrentSensor implements Sensor {
     private final Random random = new Random();
     private double calibrationOffset = 0;
+    private final SensorType type;
+
+    public IonCurrentSensor() {
+        this.type = SensorTypeFactory.getType("IonCurrentSensor");
+    }
 
     @Override
     public double getValue() throws SensorException {
@@ -17,18 +24,18 @@ public class IonCurrentSensor implements Sensor {
         }
 
         // Генерация значений в диапазоне 0.5-4.5 мА с калибровкой
-        return (0.5 + random.nextDouble() * 4.0) + calibrationOffset;
+        return (0.5 + random.nextDouble() * 4.0) - calibrationOffset;
     }
 
     @Override
     public void calibrate(double offset) {
         this.calibrationOffset = offset;
-        System.out.println("Ion current sensor calibrated with offset: " + offset + " mA");
+        System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");
     }
 
     @Override
     public String getType() {
-        return "IonCurrentSensor";
+        return type.getName();
     }
     public void add(Sensor sensor){
         throw new UnsupportedOperationException("IonCurrentSensor is a leaf node");

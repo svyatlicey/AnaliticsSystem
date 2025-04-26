@@ -1,74 +1,82 @@
 === Диагностический отчет ===
-Всего событий: 71
+Всего событий: 79
 
-• CRITICAL: EngineTemp=125,25
-• {"engine_sensor":"EngineTemp","value":125,25}
-• {"error":"Ошибка датчика температуры охлаждающей жидкости","sensor":"CoolantTempSensor"}
-• {"engine_sensor":"KnockSensor","value":7,25}
-• {"engine_sensor":"EngineRpmSensor","value":5478,33}
-• {"engine_sensor":"OilPressureSensor","value":2,58}
-• {"power_sensor":"EngineTemp","value":85,96}
-• {"power_sensor":"IonCurrentSensor","value":2,36}
-• {"power_sensor":"GeneratorCurrentSensor","value":97,30}
-• {"power_sensor":"EngineRpmSensor","value":5761,00}
-• {"power_sensor":"BatteryVoltageSensor","value":11,82}
-• {"power_sensor":"InjectorCurrentSensor","value":3,52}
-• CRITICAL: EngineTemp=11,70
-• {"engine_sensor":"EngineTemp","value":11,70}
-• CRITICAL: CoolantTempSensor=311,47
-• {"engine_sensor":"CoolantTempSensor","value":311,47}
-• {"engine_sensor":"KnockSensor","value":5,15}
-• {"engine_sensor":"EngineRpmSensor","value":1701,50}
-• {"engine_sensor":"OilPressureSensor","value":4,10}
-• {"power_sensor":"EngineTemp","value":84,29}
-• {"power_sensor":"IonCurrentSensor","value":3,80}
-• POWER_CRITICAL: GeneratorCurrentSensor=21,86
-• {"power_sensor":"GeneratorCurrentSensor","value":21,86}
-• {"power_sensor":"EngineRpmSensor","value":4349,33}
-• {"power_sensor":"BatteryVoltageSensor","value":11,56}
-• {"power_sensor":"InjectorCurrentSensor","value":3,93}
-• {"engine_sensor":"EngineTemp","value":82,54}
-• CRITICAL: CoolantTempSensor=308,94
-• {"engine_sensor":"CoolantTempSensor","value":308,94}
-• {"engine_sensor":"KnockSensor","value":0,81}
-• {"engine_sensor":"EngineRpmSensor","value":5375,00}
-• {"engine_sensor":"OilPressureSensor","value":3,54}
-• POWER_CRITICAL: EngineTemp=120,37
-• {"power_sensor":"EngineTemp","value":120,37}
-• {"power_sensor":"IonCurrentSensor","value":3,10}
-• POWER_CRITICAL: GeneratorCurrentSensor=109,70
-• {"power_sensor":"GeneratorCurrentSensor","value":109,70}
-• {"power_sensor":"EngineRpmSensor","value":4377,17}
-• {"power_sensor":"BatteryVoltageSensor","value":12,39}
-• POWER_CRITICAL: InjectorCurrentSensor=4,55
-• {"power_sensor":"InjectorCurrentSensor","value":4,55}
-• CRITICAL: EngineTemp=17,14
-• {"engine_sensor":"EngineTemp","value":17,14}
-• CRITICAL: CoolantTempSensor=317,26
-• {"engine_sensor":"CoolantTempSensor","value":317,26}
-• {"engine_sensor":"KnockSensor","value":2,82}
-• {"engine_sensor":"EngineRpmSensor","value":2656,00}
-• {"engine_sensor":"OilPressureSensor","value":2,10}
-• POWER_CRITICAL: EngineTemp=112,94
-• {"power_sensor":"EngineTemp","value":112,94}
-• {"power_error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
-• {"power_error":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
-• {"power_sensor":"EngineRpmSensor","value":5189,83}
-• {"power_sensor":"BatteryVoltageSensor","value":11,51}
-• {"power_sensor":"InjectorCurrentSensor","value":3,83}
-• CRITICAL: EngineTemp=0,94
-• {"engine_sensor":"EngineTemp","value":0,94}
-• CRITICAL: CoolantTempSensor=338,31
-• {"engine_sensor":"CoolantTempSensor","value":338,31}
-• {"engine_sensor":"KnockSensor","value":3,35}
-• CRITICAL: EngineRpmSensor=6517,25
-• {"engine_sensor":"EngineRpmSensor","value":6517,25}
-• CRITICAL: OilPressureSensor=5,09
-• {"engine_sensor":"OilPressureSensor","value":5,09}
-• POWER_CRITICAL: EngineTemp=16,74
-• {"power_sensor":"EngineTemp","value":16,74}
-• {"power_sensor":"IonCurrentSensor","value":1,44}
-• {"power_sensor":"GeneratorCurrentSensor","value":37,18}
-• {"power_sensor":"EngineRpmSensor","value":3240,25}
-• {"power_sensor":"BatteryVoltageSensor","value":13,63}
-• {"power_sensor":"InjectorCurrentSensor","value":3,69}
+• CRITICAL: EngineTemp=29,02
+• {"engine_sensor":"EngineTemp","value":29,02}
+• {"engine_sensor":"EngineRpmSensor","value":3559,33}
+• {"engine_sensor":"BatteryVoltageSensor","value":13,22}
+• POWER_CRITICAL: EngineTemp=72,75
+• {"power_sensor":"EngineTemp","value":72,75}
+• {"power_sensor":"EngineRpmSensor","value":4959,00}
+• {"power_sensor":"BatteryVoltageSensor","value":13,61}
+• CRITICAL: EngineTemp=58,61
+• {"engine_sensor":"EngineTemp","value":58,61}
+• {"engine_sensor":"EngineRpmSensor","value":6022,83}
+• {"engine_sensor":"BatteryVoltageSensor","value":13,23}
+• POWER_CRITICAL: EngineTemp=36,32
+• {"power_sensor":"EngineTemp","value":36,32}
+• {"power_sensor":"EngineRpmSensor","value":4735,67}
+• {"power_sensor":"BatteryVoltageSensor","value":13,10}
+• CRITICAL: EngineTemp=129,11
+• {"engine_sensor":"EngineTemp","value":129,11}
+• {"engine_sensor":"EngineRpmSensor","value":2719,33}
+• {"engine_sensor":"BatteryVoltageSensor","value":13,93}
+• {"power_sensor":"EngineTemp","value":102,52}
+• {"power_sensor":"EngineRpmSensor","value":4143,75}
+• {"power_sensor":"BatteryVoltageSensor","value":14,46}
+• CRITICAL: EngineTemp=32,11
+• {"engine_sensor":"EngineTemp","value":32,11}
+• {"engine_sensor":"EngineRpmSensor","value":4111,33}
+• {"engine_sensor":"BatteryVoltageSensor","value":12,25}
+• {"power_sensor":"EngineTemp","value":85,82}
+• {"power_sensor":"EngineRpmSensor","value":4769,75}
+• POWER_CRITICAL: BatteryVoltageSensor=14,98
+• {"power_sensor":"BatteryVoltageSensor","value":14,98}
+• CRITICAL: EngineTemp=54,24
+• {"engine_sensor":"EngineTemp","value":54,24}
+• {"engine_sensor":"EngineRpmSensor","value":3326,25}
+• {"engine_sensor":"BatteryVoltageSensor","value":12,91}
+• POWER_CRITICAL: EngineTemp=131,07
+• {"power_sensor":"EngineTemp","value":131,07}
+• {"power_sensor":"EngineRpmSensor","value":2027,00}
+• {"power_sensor":"BatteryVoltageSensor","value":11,69}
+• CRITICAL: EngineTemp=69,40
+• {"engine_sensor":"EngineTemp","value":69,40}
+• {"engine_sensor":"EngineRpmSensor","value":5896,00}
+• {"engine_sensor":"BatteryVoltageSensor","value":12,41}
+• POWER_CRITICAL: EngineTemp=33,43
+• {"power_sensor":"EngineTemp","value":33,43}
+• {"power_sensor":"EngineRpmSensor","value":5842,00}
+• {"power_sensor":"BatteryVoltageSensor","value":13,91}
+• {"engine_sensor":"EngineTemp","value":107,73}
+• {"engine_sensor":"EngineRpmSensor","value":3554,00}
+• {"engine_sensor":"BatteryVoltageSensor","value":13,61}
+• POWER_CRITICAL: EngineTemp=132,28
+• {"power_sensor":"EngineTemp","value":132,28}
+• {"power_sensor":"EngineRpmSensor","value":3231,00}
+• POWER_CRITICAL: BatteryVoltageSensor=14,88
+• {"power_sensor":"BatteryVoltageSensor","value":14,88}
+• {"engine_sensor":"EngineTemp","value":82,97}
+• CRITICAL: EngineRpmSensor=6957,00
+• {"engine_sensor":"EngineRpmSensor","value":6957,00}
+• {"engine_sensor":"BatteryVoltageSensor","value":14,10}
+• {"power_sensor":"EngineTemp","value":94,64}
+• {"power_sensor":"EngineRpmSensor","value":4445,50}
+• {"power_sensor":"BatteryVoltageSensor","value":12,87}
+• CRITICAL: EngineTemp=142,17
+• {"engine_sensor":"EngineTemp","value":142,17}
+• {"engine_sensor":"EngineRpmSensor","value":2974,00}
+• {"engine_sensor":"BatteryVoltageSensor","value":13,71}
+• POWER_CRITICAL: EngineTemp=113,24
+• {"power_sensor":"EngineTemp","value":113,24}
+• {"power_sensor":"EngineRpmSensor","value":3050,00}
+• {"power_sensor":"BatteryVoltageSensor","value":12,66}
+• CRITICAL: EngineTemp=136,21
+• {"engine_sensor":"EngineTemp","value":136,21}
+• {"engine_sensor":"EngineRpmSensor","value":5253,67}
+• {"engine_sensor":"BatteryVoltageSensor","value":12,93}
+• POWER_CRITICAL: EngineTemp=124,75
+• {"power_sensor":"EngineTemp","value":124,75}
+• {"power_sensor":"EngineRpmSensor","value":4882,33}
+• POWER_CRITICAL: BatteryVoltageSensor=15,00
+• {"power_sensor":"BatteryVoltageSensor","value":15,00}

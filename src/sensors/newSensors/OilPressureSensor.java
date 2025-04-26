@@ -2,29 +2,38 @@ package sensors.newSensors;
 
 import sensors.Sensor;
 import sensors.SensorException;
+import sensors.SensorType;
+import sensors.SensorTypeFactory;
 
 import java.util.Random;
 
 public class OilPressureSensor implements Sensor {
     private final Random random = new Random();
-    private double offset = 0;
+    private double calibrationOffset = 0;
+    private final SensorType type;
+
+    public OilPressureSensor() {
+        this.type = SensorTypeFactory.getType("OilPressureSensor");
+    }
+
 
     @Override
     public double getValue() throws SensorException {
         if(random.nextDouble() < 0.15) {
             throw new SensorException("Oil pressure sensor fault!");
         }
-        return 1.5 + random.nextDouble() * 4.5 + offset;
+        return 1.5 + random.nextDouble() * 4.5 - calibrationOffset;
     }
 
     @Override
     public void calibrate(double offset) {
-        this.offset = offset;
+        this.calibrationOffset = offset;
+        System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");
     }
 
     @Override
     public String getType() {
-        return "OilPressureSensor";
+        return type.getName();
     }
     public void add(Sensor sensor){
         throw new UnsupportedOperationException("OilPressureSensor is a leaf node");

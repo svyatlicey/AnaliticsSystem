@@ -2,23 +2,32 @@ package sensors.newSensors;
 
 import sensors.Sensor;
 import sensors.SensorException;
+import sensors.SensorType;
+import sensors.SensorTypeFactory;
 
 import java.util.Random;
 
 public class InjectorCurrentSensor implements Sensor {
     private final Random random = new Random();
+    private final SensorType type;
+    private double calibrationOffset = 0;
+
+    public InjectorCurrentSensor() {
+        this.type = SensorTypeFactory.getType("InjectorCurrentSensor");
+    }
 
     @Override
     public double getValue() throws SensorException {
         if(random.nextDouble() < 0.1) {
             throw new SensorException("Injector current error!");
         }
-        return 0.5 + random.nextDouble() * 4.5; // 0.5-5.0A
+        return 0.5 + random.nextDouble() * 4.5- calibrationOffset; // 0.5-5.0A
     }
 
     @Override
     public void calibrate(double offset) {
-        System.out.println("Injector current calibration");
+        this.calibrationOffset = offset;
+        System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");
     }
 
     @Override

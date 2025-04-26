@@ -1,59 +1,52 @@
 package storage;
 
-/**
- * Интерфейс для устройств хранения данных
- */
-public interface StorageDevice {
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-    /**
-     * Инициализирует устройство
-     * @throws StorageException при ошибке инициализации
-     */
-    void initialize() throws StorageException;
+public abstract class StorageDevice {
+    protected StorageImpl impl;
 
-    /**
-     * Записывает данные в указанный файл
-     * @param filePath путь к файлу
-     * @param data данные для записи
-     * @throws StorageException при ошибке записи
-     */
-    void write(String filePath, String data) throws StorageException;
+    public StorageDevice(StorageImpl impl) {
+        this.impl = impl;
+    }
 
-    /**
-     * Читает данные из файла
-     * @param filePath путь к файлу
-     * @return содержимое файла
-     * @throws StorageException при ошибке чтения
-     */
-    String read(String filePath) throws StorageException;
+    // Базовые методы (делегированы реализации)
+    public void write(String path, String data) throws StorageException {
+        Path filePath = Paths.get(path);
 
-    /**
-     * Проверяет существование файла/директории
-     * @param path путь к объекту
-     * @return true если объект существует
-     */
-    boolean exists(String path);
+        // 1. Проверяем существование родительской директории
+        if (filePath.getParent() != null) {
+            String parentDir = filePath.getParent().toString();
 
-    /**
-     * Создает директорию
-     * @param directoryPath путь к директории
-     * @throws StorageException при ошибке создания
-     */
-    void createDirectory(String directoryPath) throws StorageException;
+            if (!exists(parentDir)) {
+                // 2. Создаем директорию рекурсивно
+                createDirectory(parentDir);
+            }
+        }
 
-    /**
-     * Удаляет файл или директорию
-     * @param path путь к объекту
-     * @throws StorageException при ошибке удаления
-     */
-    void delete(String path) throws StorageException;
+        // 3. Вызываем реализацию
+        impl.writeData(path, data);
+    }
 
-    /**
-     * Проверяет доступность устройства
-     */
-    boolean isAvailable();
+    public String read(String path) throws StorageException {
+        return impl.readData(path);
+    }
+
+    public void delete(String path) throws StorageException {
+        impl.deleteData(path);
+    }
+
+    public abstract boolean isAvailable();
+
+    // Дополнительные методы (реализованы в абстракции)
+    public abstract boolean exists(String path);
+
+    public abstract void createDirectory(String dirPath) throws StorageException;
+
+    public abstract void initialize() throws StorageException;
+
+    // Метод для изменения реализации
+    public void switchImplementation(StorageImpl newImpl) {
+        this.impl = newImpl;
+    }
 }
-
-/**
- * Исключение для операций с хранилищем
- */
