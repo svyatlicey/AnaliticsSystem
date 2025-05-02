@@ -25,6 +25,17 @@ public class KnockSensor implements Sensor {
     }
 
     @Override
+    public Sensor clone(){
+        try {
+            KnockSensor cloned = (KnockSensor) super.clone();
+            cloned.calibrate(this.calibrationOffset);
+            return cloned;
+        }catch(CloneNotSupportedException e){
+            throw new RuntimeException("Clone failed", e);
+        }
+    }
+
+    @Override
     public void calibrate(double offset) {
         this.calibrationOffset = offset;
         System.out.println("Калибровка датчика " + getType() + " : смещение " + offset + "K");

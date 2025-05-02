@@ -1,4 +1,4 @@
-package facade;
+package systems;
 
 public interface SystemFacade {
     public void startDiagnosticSession(int cycles);

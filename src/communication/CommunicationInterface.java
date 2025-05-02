@@ -33,4 +33,10 @@ public interface CommunicationInterface {
      * Проверка активности соединения
      */
     boolean isConnected();
+
+    void processMessages();
+
+    void disconnect();
+
+    void connect();
 }

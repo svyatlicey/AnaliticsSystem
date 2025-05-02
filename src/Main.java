@@ -1,19 +1,30 @@
-import facade.DiagnosticSystemFacade;
+import cars.Car;
+import cars.fabric.BMWCarFactory;
+import cars.fabric.CarFactory;
+import cars.fabric.MercedesCarFactory;
+import systems.fabric.BMWDiagnosticFactory;
+import systems.fabric.DiagnosticSystemFactory;
+import systems.fabric.MercedesDiagnosticFactory;
 
 public class Main {
     public static void main(String[] args) {
-        DiagnosticSystemFacade system = new DiagnosticSystemFacade();
+        // Создаем фабрики систем диагностики
+        DiagnosticSystemFactory bmwDiagFactory = new BMWDiagnosticFactory();
+        DiagnosticSystemFactory mercedesDiagFactory = new MercedesDiagnosticFactory();
 
-        // Запуск диагностики
-        system.startDiagnosticSession(10);
+        // Настраиваем автомобильные фабрики
+        CarFactory bmwFactory = new BMWCarFactory();
+        bmwFactory.setDiagnosticFactory(bmwDiagFactory);
 
-        // Сохранение результатов
-        system.saveResults("diagnostics/report.txt");
+        CarFactory mercedesFactory = new MercedesCarFactory();
+        mercedesFactory.setDiagnosticFactory(mercedesDiagFactory);
 
-        // Вывод отчета
-        system.printReport();
+        // Создаем автомобили
+        Car bmwX5 = bmwFactory.createDieselCar("X5", 2023);
+        Car mercedesE = mercedesFactory.createDieselCar("E-Class", 2024);
 
-        // Завершение работы
-        system.shutdownSystem();
+        // Запускаем диагностику
+        bmwX5.performFullDiagnostic(6);
+        mercedesE.performFullDiagnostic(7);
     }
 }

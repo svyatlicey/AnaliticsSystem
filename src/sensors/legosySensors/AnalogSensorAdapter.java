@@ -10,13 +10,15 @@ public class AnalogSensorAdapter implements Sensor {
     private final String type;
     private double calibrationOffset = 0.0;
 
-    public AnalogSensorAdapter(AnalogTemperatureSensor legacySensor,
+    public AnalogSensorAdapter(AnalogSensor legacySensor,
                                double scaleFactor,
                                String type) {
         this.legacySensor = legacySensor;
         this.scaleFactor = scaleFactor;
         this.type = type;
     }
+
+
 
     @Override
     public double getValue() throws SensorException {
@@ -27,6 +29,23 @@ public class AnalogSensorAdapter implements Sensor {
             throw new SensorException("Ошибка аналогового датчика " + type);
         }
     }
+
+    @Override
+
+    public Sensor clone(){
+        try{
+            AnalogSensor clonedLegacy = legacySensor.clone();
+            AnalogSensorAdapter cloned = new AnalogSensorAdapter(clonedLegacy, scaleFactor, type);
+
+            cloned.calibrate(this.calibrationOffset);
+            return cloned;
+        }
+        catch(Exception e){
+            throw new RuntimeException("Ошибка клонирования", e);
+        }
+
+    }
+
 
     @Override
     public void calibrate(double offset) {

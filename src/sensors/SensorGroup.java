@@ -22,6 +22,9 @@ public class SensorGroup implements Sensor, Iterable<Sensor>{
             }
         }
     }
+    private SensorGroup(String type){
+        this.type = type;
+    }
     @Override
     public String getType(){
         return this.type;
@@ -77,6 +80,17 @@ public class SensorGroup implements Sensor, Iterable<Sensor>{
         // Рассчет среднего значения
         double sum = successfulValues.stream().mapToDouble(Double::doubleValue).sum();
         return sum / successfulValues.size();
+    }
+
+    @Override
+
+    public Sensor clone(){
+        SensorGroup cloned = new SensorGroup(this.type);
+
+        for(Sensor sensor:this.sensors){
+            cloned.add(sensor.clone());
+        }
+        return cloned;
     }
 
     @Override

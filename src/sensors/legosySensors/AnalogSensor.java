@@ -1,5 +1,6 @@
 package sensors.legosySensors;
 
-public interface AnalogSensor {
+public interface AnalogSensor extends Cloneable {
     double readVoltage();
+    AnalogSensor clone();
 }

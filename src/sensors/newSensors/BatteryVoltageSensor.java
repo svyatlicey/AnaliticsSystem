@@ -26,6 +26,17 @@ public class BatteryVoltageSensor implements Sensor {
         // Generate voltage between 11.5V and 15.0V
         return 11.5 + random.nextDouble() * 3.5 - calibrationOffset;
     }
+    @Override
+    public Sensor clone(){
+        try {
+            BatteryVoltageSensor cloned = (BatteryVoltageSensor) super.clone();
+            cloned.calibrate(this.calibrationOffset);
+            return cloned;
+        }catch(CloneNotSupportedException e){
+            throw new RuntimeException("Clone failed", e);
+        }
+    }
+
 
     @Override
     public void calibrate(double offset) {

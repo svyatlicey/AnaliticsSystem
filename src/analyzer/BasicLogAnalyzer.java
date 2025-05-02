@@ -14,7 +14,7 @@ public class BasicLogAnalyzer implements LogAnalyzer {
     private final BusDeviceDelegate busDeviceDelegate;
 
     public BasicLogAnalyzer(String deviceId) {
-        this.busDeviceDelegate = new BusDeviceDelegate(deviceId,this::analyze);
+        this.busDeviceDelegate = new BusDeviceDelegate(deviceId,this::handleMessage);
     }
 
 
@@ -55,5 +55,5 @@ public class BasicLogAnalyzer implements LogAnalyzer {
     @Override public String getDeviceId() { return busDeviceDelegate.getDeviceId(); }
     @Override public void connectToBus(CommunicationInterface bus) { busDeviceDelegate.connectToBus(bus); }
     @Override public void disconnectFromBus() { busDeviceDelegate.disconnectFromBus(); }
-    @Override public void handleMessage(String message) {} // Не используется напрямую
+    @Override public void handleMessage(String message) { analyze(message);} // Не используется напрямую
 }
