@@ -1,0 +1,47 @@
+=== Диагностический отчет ===
+Всего событий: 42
+
+• {"engine_sensor":"KnockSensor","value":6,04}
+• {"engine_sensor":"IonCurrentSensor","value":1,51}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,10}
+• {"power_sensor":"KnockSensor","value":4,26}
+• {"power_sensor":"IonCurrentSensor","value":2,60}
+• {"power_sensor":"InjectorCurrentSensor","value":4,39}
+• {"error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"engine_sensor":"IonCurrentSensor","value":2,61}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,86}
+• {"power_sensor":"KnockSensor","value":0,03}
+• {"power_sensor":"IonCurrentSensor","value":1,25}
+• {"power_sensor":"InjectorCurrentSensor","value":1,55}
+• {"engine_sensor":"KnockSensor","value":6,48}
+• {"engine_sensor":"IonCurrentSensor","value":2,47}
+• {"engine_sensor":"InjectorCurrentSensor","value":2,07}
+• {"power_error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_sensor":"IonCurrentSensor","value":1,38}
+• {"power_sensor":"InjectorCurrentSensor","value":0,77}
+• {"error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"engine_sensor":"IonCurrentSensor","value":2,15}
+• {"engine_sensor":"InjectorCurrentSensor","value":2,32}
+• {"power_sensor":"KnockSensor","value":6,80}
+• {"power_error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"power_sensor":"InjectorCurrentSensor","value":2,26}
+• {"engine_sensor":"KnockSensor","value":6,80}
+• {"engine_sensor":"IonCurrentSensor","value":2,82}
+• {"engine_sensor":"InjectorCurrentSensor","value":1,30}
+• {"power_sensor":"KnockSensor","value":9,38}
+• {"power_sensor":"IonCurrentSensor","value":2,07}
+• {"power_sensor":"InjectorCurrentSensor","value":1,89}
+• {"engine_sensor":"KnockSensor","value":5,99}
+• {"engine_sensor":"IonCurrentSensor","value":0,68}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,27}
+• {"power_sensor":"KnockSensor","value":0,41}
+• {"power_sensor":"IonCurrentSensor","value":4,39}
+• {"power_sensor":"InjectorCurrentSensor","value":2,76}
+• {"engine_sensor":"KnockSensor","value":0,07}
+• {"engine_sensor":"IonCurrentSensor","value":1,24}
+• {"engine_sensor":"InjectorCurrentSensor","value":1,57}
+• {"power_sensor":"KnockSensor","value":4,80}
+• {"power_error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"power_sensor":"InjectorCurrentSensor","value":0,72}
+
+PredictLogAnalyzer make some predictions...

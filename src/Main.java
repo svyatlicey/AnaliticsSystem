@@ -20,11 +20,17 @@ public class Main {
         mercedesFactory.setDiagnosticFactory(mercedesDiagFactory);
 
         // Создаем автомобили
-        Car bmwX5 = bmwFactory.createDieselCar("X5", 2023);
-        Car mercedesE = mercedesFactory.createDieselCar("E-Class", 2024);
+        Car bmwX5 = bmwFactory.createDieselCar("X5", 2025);
+        Car mercedesE = mercedesFactory.createDieselCar("E-Class", 2025);
+
+        Car bmwX4 = bmwFactory.createGasolineCar("X4", 2025);
+        Car mercedesS = mercedesFactory.createGasolineCar("S-Class", 2025);
 
         // Запускаем диагностику
         bmwX5.performFullDiagnostic(6);
         mercedesE.performFullDiagnostic(7);
+        bmwX4.performFullDiagnostic(6);
+        mercedesS.performFullDiagnostic(7);
+
     }
 }

@@ -13,7 +13,7 @@ public class CoolantTemperatureSensor implements Sensor {
     private double calibrationOffset = 0;
 
     public CoolantTemperatureSensor() {
-        this.type = SensorTypeFactory.getType("CoolantTempSensor");
+        this.type = SensorTypeFactory.getInstance().getType("CoolantTempSensor");
     }
     @Override
     public double getValue() throws SensorException {

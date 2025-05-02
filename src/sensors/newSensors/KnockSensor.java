@@ -13,7 +13,7 @@ public class KnockSensor implements Sensor {
     private final SensorType type;
 
     public KnockSensor() {
-        this.type = SensorTypeFactory.getType("KnockSensor");
+        this.type = SensorTypeFactory.getInstance().getType("KnockSensor");
     }
 
     @Override

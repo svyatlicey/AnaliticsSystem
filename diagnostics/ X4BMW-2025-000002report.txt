@@ -1,0 +1,41 @@
+=== Диагностический отчет ===
+Всего событий: 36
+
+• {"engine_sensor":"KnockSensor","value":4,17}
+• {"engine_sensor":"IonCurrentSensor","value":2,98}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,25}
+• {"power_sensor":"KnockSensor","value":8,76}
+• {"power_sensor":"IonCurrentSensor","value":2,81}
+• {"power_sensor":"InjectorCurrentSensor","value":1,19}
+• {"engine_sensor":"KnockSensor","value":4,74}
+• {"engine_sensor":"IonCurrentSensor","value":4,17}
+• {"engine_sensor":"InjectorCurrentSensor","value":0,71}
+• {"power_sensor":"KnockSensor","value":8,70}
+• {"power_sensor":"IonCurrentSensor","value":0,67}
+• {"power_sensor":"InjectorCurrentSensor","value":1,73}
+• {"engine_sensor":"KnockSensor","value":6,37}
+• {"engine_sensor":"IonCurrentSensor","value":2,34}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,56}
+• {"power_sensor":"KnockSensor","value":8,68}
+• {"power_sensor":"IonCurrentSensor","value":2,85}
+• {"power_error":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"engine_sensor":"KnockSensor","value":3,23}
+• {"error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,04}
+• {"power_error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_sensor":"IonCurrentSensor","value":2,00}
+• {"power_sensor":"InjectorCurrentSensor","value":2,80}
+• {"engine_sensor":"KnockSensor","value":3,12}
+• {"error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"power_sensor":"KnockSensor","value":1,16}
+• {"power_sensor":"IonCurrentSensor","value":1,87}
+• {"power_sensor":"InjectorCurrentSensor","value":0,71}
+• {"engine_sensor":"KnockSensor","value":6,33}
+• {"engine_sensor":"IonCurrentSensor","value":2,65}
+• {"engine_sensor":"InjectorCurrentSensor","value":2,78}
+• {"power_error":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_sensor":"IonCurrentSensor","value":0,91}
+• {"power_sensor":"InjectorCurrentSensor","value":2,70}
+
+PredictLogAnalyzer make some predictions...

@@ -13,7 +13,7 @@ public class InjectorCurrentSensor implements Sensor {
     private double calibrationOffset = 0;
 
     public InjectorCurrentSensor() {
-        this.type = SensorTypeFactory.getType("InjectorCurrentSensor");
+        this.type = SensorTypeFactory.getInstance().getType("InjectorCurrentSensor");
     }
 
     @Override

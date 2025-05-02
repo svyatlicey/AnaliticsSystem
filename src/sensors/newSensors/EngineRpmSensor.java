@@ -13,7 +13,7 @@ public class EngineRpmSensor implements Sensor {
     private final SensorType type;
 
     public EngineRpmSensor() {
-        this.type = SensorTypeFactory.getType("EngineRpmSensor");
+        this.type = SensorTypeFactory.getInstance().getType("EngineRpmSensor");
     }
 
     @Override

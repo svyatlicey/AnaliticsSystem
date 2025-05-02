@@ -13,7 +13,7 @@ public class IonCurrentSensor implements Sensor {
     private final SensorType type;
 
     public IonCurrentSensor() {
-        this.type = SensorTypeFactory.getType("IonCurrentSensor");
+        this.type = SensorTypeFactory.getInstance().getType("IonCurrentSensor");
     }
 
     @Override

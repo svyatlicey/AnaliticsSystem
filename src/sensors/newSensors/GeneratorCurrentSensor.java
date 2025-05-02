@@ -12,7 +12,7 @@ public class GeneratorCurrentSensor implements Sensor {
     private final Random random = new Random();
     private double calibrationOffset = 0;
     public GeneratorCurrentSensor() {
-        this.type = SensorTypeFactory.getType("GeneratorCurrentSensor");
+        this.type = SensorTypeFactory.getInstance().getType("GeneratorCurrentSensor");
     }
 
     @Override

@@ -13,7 +13,7 @@ public class BatteryVoltageSensor implements Sensor {
     private double calibrationOffset = 0;
 
     public BatteryVoltageSensor(){
-        this.type = SensorTypeFactory.getType("BatteryVoltageSensor");
+        this.type = SensorTypeFactory.getInstance().getType("BatteryVoltageSensor");
     }
 
     @Override

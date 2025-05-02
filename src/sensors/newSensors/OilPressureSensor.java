@@ -13,7 +13,7 @@ public class OilPressureSensor implements Sensor {
     private final SensorType type;
 
     public OilPressureSensor() {
-        this.type = SensorTypeFactory.getType("OilPressureSensor");
+        this.type = SensorTypeFactory.getInstance().getType("OilPressureSensor");
     }
 
 
