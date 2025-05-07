@@ -1,41 +1,41 @@
 === Диагностический отчет ===
 Всего событий: 36
 
-• {"engine_sensor":"KnockSensor","value":4,17}
-• {"engine_sensor":"IonCurrentSensor","value":2,98}
-• {"engine_sensor":"InjectorCurrentSensor","value":4,25}
-• {"power_sensor":"KnockSensor","value":8,76}
-• {"power_sensor":"IonCurrentSensor","value":2,81}
-• {"power_sensor":"InjectorCurrentSensor","value":1,19}
-• {"engine_sensor":"KnockSensor","value":4,74}
-• {"engine_sensor":"IonCurrentSensor","value":4,17}
-• {"engine_sensor":"InjectorCurrentSensor","value":0,71}
-• {"power_sensor":"KnockSensor","value":8,70}
-• {"power_sensor":"IonCurrentSensor","value":0,67}
-• {"power_sensor":"InjectorCurrentSensor","value":1,73}
-• {"engine_sensor":"KnockSensor","value":6,37}
-• {"engine_sensor":"IonCurrentSensor","value":2,34}
-• {"engine_sensor":"InjectorCurrentSensor","value":4,56}
-• {"power_sensor":"KnockSensor","value":8,68}
-• {"power_sensor":"IonCurrentSensor","value":2,85}
-• {"power_error":"Injector current error!","sensor":"InjectorCurrentSensor"}
-• {"engine_sensor":"KnockSensor","value":3,23}
+• {"engine_sensor":"KnockSensor","value":1,61}
 • {"error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
-• {"engine_sensor":"InjectorCurrentSensor","value":4,04}
-• {"power_error":"Knock sensor malfunction!","sensor":"KnockSensor"}
-• {"power_sensor":"IonCurrentSensor","value":2,00}
-• {"power_sensor":"InjectorCurrentSensor","value":2,80}
-• {"engine_sensor":"KnockSensor","value":3,12}
-• {"error":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_sensor":"InjectorCurrentSensor","value":1,08}
+• {"power_sensor":"KnockSensor","value":1,37}
+• {"power_sensor":"IonCurrentSensor","value":0,60}
+• {"power_sensor":"InjectorCurrentSensor","value":3,66}
+• {"engine_sensor":"KnockSensor","value":2,10}
+• {"engine_sensor":"IonCurrentSensor","value":1,87}
 • {"error":"Injector current error!","sensor":"InjectorCurrentSensor"}
-• {"power_sensor":"KnockSensor","value":1,16}
-• {"power_sensor":"IonCurrentSensor","value":1,87}
-• {"power_sensor":"InjectorCurrentSensor","value":0,71}
-• {"engine_sensor":"KnockSensor","value":6,33}
-• {"engine_sensor":"IonCurrentSensor","value":2,65}
-• {"engine_sensor":"InjectorCurrentSensor","value":2,78}
+• {"power_sensor":"KnockSensor","value":0,74}
+• {"power_sensor":"IonCurrentSensor","value":3,55}
+• {"power_error":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"engine_sensor":"KnockSensor","value":2,81}
+• {"engine_sensor":"IonCurrentSensor","value":3,22}
+• {"engine_sensor":"InjectorCurrentSensor","value":3,09}
 • {"power_error":"Knock sensor malfunction!","sensor":"KnockSensor"}
-• {"power_sensor":"IonCurrentSensor","value":0,91}
-• {"power_sensor":"InjectorCurrentSensor","value":2,70}
+• {"power_sensor":"IonCurrentSensor","value":3,65}
+• {"power_sensor":"InjectorCurrentSensor","value":3,25}
+• {"engine_sensor":"KnockSensor","value":0,85}
+• {"engine_sensor":"IonCurrentSensor","value":0,69}
+• {"error":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"power_sensor":"KnockSensor","value":4,30}
+• {"power_sensor":"IonCurrentSensor","value":2,48}
+• {"power_sensor":"InjectorCurrentSensor","value":1,32}
+• {"engine_sensor":"KnockSensor","value":2,37}
+• {"engine_sensor":"IonCurrentSensor","value":3,81}
+• {"engine_sensor":"InjectorCurrentSensor","value":3,93}
+• {"power_sensor":"KnockSensor","value":4,38}
+• {"power_sensor":"IonCurrentSensor","value":1,93}
+• {"power_sensor":"InjectorCurrentSensor","value":2,49}
+• {"engine_sensor":"KnockSensor","value":4,61}
+• {"engine_sensor":"IonCurrentSensor","value":2,70}
+• {"engine_sensor":"InjectorCurrentSensor","value":4,08}
+• {"power_sensor":"KnockSensor","value":5,00}
+• {"power_sensor":"IonCurrentSensor","value":3,25}
+• {"power_sensor":"InjectorCurrentSensor","value":0,63}
 
 PredictLogAnalyzer make some predictions...

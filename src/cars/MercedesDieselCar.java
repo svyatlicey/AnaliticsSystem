@@ -14,4 +14,8 @@ public class MercedesDieselCar extends DieselCar {
         diagnosticSystem.startDiagnosticSession(cycles);
         diagnosticSystem.saveResults("diagnostics/ " + model + VIN +"report.txt");
     }
+    @Override
+    public void doSomethingDiesel(){
+        System.out.println("do something diesel Mercedes");
+    }
 }

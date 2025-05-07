@@ -15,6 +15,7 @@ public abstract class GasolineCar implements Car {
         this.year = year;
         this.diagnosticSystem = diagnosticSystem;
     }
+    public abstract void doSomethingGasoline();
     @Override public String getVIN(){return VIN;}
     @Override public String getModel() { return model; }
     @Override public int getProductionYear() { return year; }

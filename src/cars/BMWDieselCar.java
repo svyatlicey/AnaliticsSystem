@@ -13,4 +13,8 @@ public class BMWDieselCar extends DieselCar {
         diagnosticSystem.startDiagnosticSession(cycles);
         diagnosticSystem.saveResults("diagnostics/ " + model + VIN +"report.txt");
     }
+    @Override
+    public void doSomethingDiesel(){
+        System.out.println("BMW diesel car is doing something...");
+    }
 }

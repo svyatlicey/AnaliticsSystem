@@ -14,4 +14,8 @@ public class MercedesGasolineCar extends GasolineCar {
         diagnosticSystem.startDiagnosticSession(cycles);
         diagnosticSystem.saveResults("diagnostics/ " + model + VIN +"report.txt");
     }
+    @Override
+    public void doSomethingGasoline(){
+        System.out.println("do something gasoline Mercedes");
+    }
 }

@@ -1,29 +1,29 @@
 === Диагностический отчет ===
 Всего событий: 24
 
-• {"engine_sensor":"GeneratorCurrentSensor","value":5,39}
-• {"engine_sensor":"OilPressureSensor","value":5,15}
-• {"power_sensor":"GeneratorCurrentSensor","value":26,51}
-• {"power_error":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
-• {"engine_sensor":"GeneratorCurrentSensor","value":2,64}
-• {"engine_sensor":"OilPressureSensor","value":5,96}
-• {"power_error":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
-• {"power_sensor":"OilPressureSensor","value":5,39}
-• {"engine_sensor":"GeneratorCurrentSensor","value":38,91}
+• {"error":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
 • {"error":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
-• {"power_sensor":"GeneratorCurrentSensor","value":72,48}
-• {"power_sensor":"OilPressureSensor","value":3,36}
-• {"engine_sensor":"GeneratorCurrentSensor","value":40,21}
-• {"engine_sensor":"OilPressureSensor","value":3,94}
-• {"power_error":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
-• {"power_sensor":"OilPressureSensor","value":3,17}
-• {"engine_sensor":"GeneratorCurrentSensor","value":15,77}
-• {"engine_sensor":"OilPressureSensor","value":4,64}
-• {"power_sensor":"GeneratorCurrentSensor","value":113,61}
-• {"power_sensor":"OilPressureSensor","value":3,55}
-• {"engine_sensor":"GeneratorCurrentSensor","value":83,23}
-• {"engine_sensor":"OilPressureSensor","value":5,60}
-• {"power_sensor":"GeneratorCurrentSensor","value":56,53}
-• {"power_sensor":"OilPressureSensor","value":4,84}
+• {"power_sensor":"GeneratorCurrentSensor","value":113,97}
+• {"power_sensor":"OilPressureSensor","value":2,83}
+• {"engine_sensor":"GeneratorCurrentSensor","value":112,53}
+• {"engine_sensor":"OilPressureSensor","value":3,44}
+• {"power_sensor":"GeneratorCurrentSensor","value":31,58}
+• {"power_sensor":"OilPressureSensor","value":1,86}
+• {"error":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_sensor":"OilPressureSensor","value":2,45}
+• {"power_sensor":"GeneratorCurrentSensor","value":68,98}
+• {"power_sensor":"OilPressureSensor","value":2,89}
+• {"engine_sensor":"GeneratorCurrentSensor","value":116,77}
+• {"engine_sensor":"OilPressureSensor","value":4,91}
+• {"power_sensor":"GeneratorCurrentSensor","value":32,08}
+• {"power_sensor":"OilPressureSensor","value":4,36}
+• {"engine_sensor":"GeneratorCurrentSensor","value":7,02}
+• {"engine_sensor":"OilPressureSensor","value":4,65}
+• {"power_sensor":"GeneratorCurrentSensor","value":7,79}
+• {"power_sensor":"OilPressureSensor","value":2,57}
+• {"engine_sensor":"GeneratorCurrentSensor","value":3,17}
+• {"engine_sensor":"OilPressureSensor","value":4,98}
+• {"power_sensor":"GeneratorCurrentSensor","value":69,22}
+• {"power_sensor":"OilPressureSensor","value":5,04}
 
 PredictLogAnalyzer make some predictions...
