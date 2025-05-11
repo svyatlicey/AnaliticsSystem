@@ -10,7 +10,7 @@ public class PredictLogAnalyzer extends LogAnalyzerDecorator{
 
     }
     public String generatePrediction(){
-        return "PredictLogAnalyzer make some predictions...";
+        return "PredictLogAnalyzer make some predictions...\n";
     }
 
 }

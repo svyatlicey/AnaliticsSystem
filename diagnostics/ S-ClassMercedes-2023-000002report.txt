@@ -1,0 +1,363 @@
+=== Диагностический отчет ===
+Всего событий: 6
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+• {"engine_microcontroller":"KnockSensor","value":2,14}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,24}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,26}
+• {"power_controller":"KnockSensor","value":3,52}
+• {"power_controller":"IonCurrentSensor","value":3,32}
+• {"power_controller":"InjectorCurrentSensor","value":4,61}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 18
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+• {"engine_microcontroller":"KnockSensor","value":2,14}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,24}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,26}
+• {"power_controller":"KnockSensor","value":3,52}
+• {"power_controller":"IonCurrentSensor","value":3,32}
+• {"power_controller":"InjectorCurrentSensor","value":4,61}
+• {"engine_microcontroller":"KnockSensor","value":5,74}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,70}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,95}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":0,90}
+• {"power_controller":"InjectorCurrentSensor","value":2,28}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 24
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+• {"engine_microcontroller":"KnockSensor","value":2,14}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,24}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,26}
+• {"power_controller":"KnockSensor","value":3,52}
+• {"power_controller":"IonCurrentSensor","value":3,32}
+• {"power_controller":"InjectorCurrentSensor","value":4,61}
+• {"engine_microcontroller":"KnockSensor","value":5,74}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,70}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,95}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":0,90}
+• {"power_controller":"InjectorCurrentSensor","value":2,28}
+• {"engine_microcontroller":"KnockSensor","value":3,09}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,04}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,98}
+• {"power_controller":"KnockSensor","value":4,78}
+• {"power_controller":"IonCurrentSensor","value":3,62}
+• {"power_controller":"InjectorCurrentSensor","value":1,55}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 30
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+• {"engine_microcontroller":"KnockSensor","value":2,14}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,24}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,26}
+• {"power_controller":"KnockSensor","value":3,52}
+• {"power_controller":"IonCurrentSensor","value":3,32}
+• {"power_controller":"InjectorCurrentSensor","value":4,61}
+• {"engine_microcontroller":"KnockSensor","value":5,74}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,70}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,95}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":0,90}
+• {"power_controller":"InjectorCurrentSensor","value":2,28}
+• {"engine_microcontroller":"KnockSensor","value":3,09}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,04}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,98}
+• {"power_controller":"KnockSensor","value":4,78}
+• {"power_controller":"IonCurrentSensor","value":3,62}
+• {"power_controller":"InjectorCurrentSensor","value":1,55}
+• {"engine_microcontroller":"KnockSensor","value":7,50}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,09}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,69}
+• {"power_controller":"KnockSensor","value":0,71}
+• {"power_controller":"IonCurrentSensor","value":3,54}
+• {"power_controller":"InjectorCurrentSensor","value":4,36}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 36
+
+• {"error":"engine_microcontroller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"error":"engine_microcontroller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":3,72}
+• {"power_controller":"InjectorCurrentSensor","value":2,47}
+• {"engine_microcontroller":"KnockSensor","value":2,14}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,24}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,26}
+• {"power_controller":"KnockSensor","value":3,52}
+• {"power_controller":"IonCurrentSensor","value":3,32}
+• {"power_controller":"InjectorCurrentSensor","value":4,61}
+• {"engine_microcontroller":"KnockSensor","value":5,74}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,70}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,95}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":0,90}
+• {"power_controller":"InjectorCurrentSensor","value":2,28}
+• {"engine_microcontroller":"KnockSensor","value":3,09}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,04}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,98}
+• {"power_controller":"KnockSensor","value":4,78}
+• {"power_controller":"IonCurrentSensor","value":3,62}
+• {"power_controller":"InjectorCurrentSensor","value":1,55}
+• {"engine_microcontroller":"KnockSensor","value":7,50}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,09}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,69}
+• {"power_controller":"KnockSensor","value":0,71}
+• {"power_controller":"IonCurrentSensor","value":3,54}
+• {"power_controller":"InjectorCurrentSensor","value":4,36}
+• {"engine_microcontroller":"KnockSensor","value":1,66}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,63}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,56}
+• {"power_controller":"KnockSensor","value":8,60}
+• {"power_controller":"IonCurrentSensor","value":1,27}
+• {"error":"power_controller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 6
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+• {"engine_microcontroller":"KnockSensor","value":2,93}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,31}
+• {"power_controller":"KnockSensor","value":7,55}
+• {"power_controller":"IonCurrentSensor","value":3,99}
+• {"power_controller":"InjectorCurrentSensor","value":1,14}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 18
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+• {"engine_microcontroller":"KnockSensor","value":2,93}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,31}
+• {"power_controller":"KnockSensor","value":7,55}
+• {"power_controller":"IonCurrentSensor","value":3,99}
+• {"power_controller":"InjectorCurrentSensor","value":1,14}
+• {"engine_microcontroller":"KnockSensor","value":4,78}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,05}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,45}
+• {"power_controller":"KnockSensor","value":6,52}
+• {"power_controller":"IonCurrentSensor","value":2,46}
+• {"power_controller":"InjectorCurrentSensor","value":1,82}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 24
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+• {"engine_microcontroller":"KnockSensor","value":2,93}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,31}
+• {"power_controller":"KnockSensor","value":7,55}
+• {"power_controller":"IonCurrentSensor","value":3,99}
+• {"power_controller":"InjectorCurrentSensor","value":1,14}
+• {"engine_microcontroller":"KnockSensor","value":4,78}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,05}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,45}
+• {"power_controller":"KnockSensor","value":6,52}
+• {"power_controller":"IonCurrentSensor","value":2,46}
+• {"power_controller":"InjectorCurrentSensor","value":1,82}
+• {"engine_microcontroller":"KnockSensor","value":5,17}
+• {"engine_microcontroller":"IonCurrentSensor","value":1,66}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,97}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,18}
+• {"power_controller":"InjectorCurrentSensor","value":4,18}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 30
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+• {"engine_microcontroller":"KnockSensor","value":2,93}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,31}
+• {"power_controller":"KnockSensor","value":7,55}
+• {"power_controller":"IonCurrentSensor","value":3,99}
+• {"power_controller":"InjectorCurrentSensor","value":1,14}
+• {"engine_microcontroller":"KnockSensor","value":4,78}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,05}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,45}
+• {"power_controller":"KnockSensor","value":6,52}
+• {"power_controller":"IonCurrentSensor","value":2,46}
+• {"power_controller":"InjectorCurrentSensor","value":1,82}
+• {"engine_microcontroller":"KnockSensor","value":5,17}
+• {"engine_microcontroller":"IonCurrentSensor","value":1,66}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,97}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,18}
+• {"power_controller":"InjectorCurrentSensor","value":4,18}
+• {"engine_microcontroller":"KnockSensor","value":4,22}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,35}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,53}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":1,75}
+• {"power_controller":"InjectorCurrentSensor","value":2,40}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 36
+
+• {"engine_microcontroller":"KnockSensor","value":2,18}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,06}
+• {"power_controller":"KnockSensor","value":2,42}
+• {"power_controller":"IonCurrentSensor","value":2,34}
+• {"power_controller":"InjectorCurrentSensor","value":2,64}
+• {"engine_microcontroller":"KnockSensor","value":2,93}
+• {"error":"engine_microcontroller":"Ion current sensor fault detected!","sensor":"IonCurrentSensor"}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,31}
+• {"power_controller":"KnockSensor","value":7,55}
+• {"power_controller":"IonCurrentSensor","value":3,99}
+• {"power_controller":"InjectorCurrentSensor","value":1,14}
+• {"engine_microcontroller":"KnockSensor","value":4,78}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,05}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":4,45}
+• {"power_controller":"KnockSensor","value":6,52}
+• {"power_controller":"IonCurrentSensor","value":2,46}
+• {"power_controller":"InjectorCurrentSensor","value":1,82}
+• {"engine_microcontroller":"KnockSensor","value":5,17}
+• {"engine_microcontroller":"IonCurrentSensor","value":1,66}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":2,97}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,18}
+• {"power_controller":"InjectorCurrentSensor","value":4,18}
+• {"engine_microcontroller":"KnockSensor","value":4,22}
+• {"engine_microcontroller":"IonCurrentSensor","value":3,35}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,53}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":1,75}
+• {"power_controller":"InjectorCurrentSensor","value":2,40}
+• {"engine_microcontroller":"KnockSensor","value":0,58}
+• {"engine_microcontroller":"IonCurrentSensor","value":2,66}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,60}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,89}
+• {"power_controller":"InjectorCurrentSensor","value":4,14}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 6
+
+• {"engine_microcontroller":"KnockSensor","value":5,75}
+• {"engine_microcontroller":"IonCurrentSensor","value":2,85}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,41}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,38}
+• {"power_controller":"InjectorCurrentSensor","value":4,36}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"engine_microcontroller":"KnockSensor","value":5,75}
+• {"engine_microcontroller":"IonCurrentSensor","value":2,85}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,41}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,38}
+• {"power_controller":"InjectorCurrentSensor","value":4,36}
+• {"engine_microcontroller":"KnockSensor","value":1,70}
+• {"engine_microcontroller":"IonCurrentSensor","value":1,23}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":0,68}
+• {"power_controller":"KnockSensor","value":3,14}
+• {"power_controller":"IonCurrentSensor","value":3,78}
+• {"error":"power_controller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 18
+
+• {"engine_microcontroller":"KnockSensor","value":5,75}
+• {"engine_microcontroller":"IonCurrentSensor","value":2,85}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":1,41}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,38}
+• {"power_controller":"InjectorCurrentSensor","value":4,36}
+• {"engine_microcontroller":"KnockSensor","value":1,70}
+• {"engine_microcontroller":"IonCurrentSensor","value":1,23}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":0,68}
+• {"power_controller":"KnockSensor","value":3,14}
+• {"power_controller":"IonCurrentSensor","value":3,78}
+• {"error":"power_controller":"Injector current error!","sensor":"InjectorCurrentSensor"}
+• {"engine_microcontroller":"KnockSensor","value":8,64}
+• {"engine_microcontroller":"IonCurrentSensor","value":4,35}
+• {"engine_microcontroller":"InjectorCurrentSensor","value":3,95}
+• {"error":"power_controller":"Knock sensor malfunction!","sensor":"KnockSensor"}
+• {"power_controller":"IonCurrentSensor","value":2,97}
+• {"power_controller":"InjectorCurrentSensor","value":3,78}
+
+PredictLogAnalyzer make some predictions...

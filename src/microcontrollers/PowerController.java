@@ -98,7 +98,7 @@ public class PowerController implements Microcontroller {
 
     private void sendToBus(String sensorId, double value) {
         if (busDelegate.isConnected()) {
-            String message = String.format("{\"power_sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
+            String message = String.format("{\"power_controller\":\"%s\",\"value\":%.2f}", sensorId, value);
             busDelegate.send("MainAnalyzer", message);
         }
     }
@@ -106,7 +106,7 @@ public class PowerController implements Microcontroller {
     private void handleSensorError(String sensorId, SensorException e) {
         System.err.printf("[PWR] %s ошибка датчика питания %s: %s%n", getDeviceId(), sensorId, e.getMessage());
         if (busDelegate.isConnected()) {
-            String errorMsg = String.format("{\"power_error\":\"%s\",\"sensor\":\"%s\"}",
+            String errorMsg = String.format("{\"error\":\"power_controller\":\"%s\",\"sensor\":\"%s\"}",
                     e.getMessage(), sensorId);
             busDelegate.send("MainAnalyzer", errorMsg);
         }

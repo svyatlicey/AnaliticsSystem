@@ -1,0 +1,209 @@
+=== Диагностический отчет ===
+Всего событий: 4
+
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":3,16}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,19}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 8
+
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":3,16}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,19}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":71,98}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":25,70}
+• {"power_controller":"OilPressureSensor","value":5,94}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":3,16}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,19}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":71,98}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":25,70}
+• {"power_controller":"OilPressureSensor","value":5,94}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":22,62}
+• {"engine_microcontroller":"OilPressureSensor","value":4,22}
+• {"power_controller":"GeneratorCurrentSensor","value":63,56}
+• {"power_controller":"OilPressureSensor","value":4,08}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 16
+
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":3,16}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,19}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":71,98}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":25,70}
+• {"power_controller":"OilPressureSensor","value":5,94}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":22,62}
+• {"engine_microcontroller":"OilPressureSensor","value":4,22}
+• {"power_controller":"GeneratorCurrentSensor","value":63,56}
+• {"power_controller":"OilPressureSensor","value":4,08}
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":5,30}
+• {"power_controller":"GeneratorCurrentSensor","value":30,51}
+• {"power_controller":"OilPressureSensor","value":3,03}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 20
+
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":3,16}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,19}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":71,98}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":25,70}
+• {"power_controller":"OilPressureSensor","value":5,94}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":22,62}
+• {"engine_microcontroller":"OilPressureSensor","value":4,22}
+• {"power_controller":"GeneratorCurrentSensor","value":63,56}
+• {"power_controller":"OilPressureSensor","value":4,08}
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":5,30}
+• {"power_controller":"GeneratorCurrentSensor","value":30,51}
+• {"power_controller":"OilPressureSensor","value":3,03}
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":5,73}
+• {"power_controller":"GeneratorCurrentSensor","value":95,38}
+• {"power_controller":"OilPressureSensor","value":2,90}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 4
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":26,21}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":74,27}
+• {"power_controller":"OilPressureSensor","value":3,67}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 8
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":26,21}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":74,27}
+• {"power_controller":"OilPressureSensor","value":3,67}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":7,48}
+• {"engine_microcontroller":"OilPressureSensor","value":4,77}
+• {"power_controller":"GeneratorCurrentSensor","value":47,26}
+• {"power_controller":"OilPressureSensor","value":4,93}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":26,21}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":74,27}
+• {"power_controller":"OilPressureSensor","value":3,67}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":7,48}
+• {"engine_microcontroller":"OilPressureSensor","value":4,77}
+• {"power_controller":"GeneratorCurrentSensor","value":47,26}
+• {"power_controller":"OilPressureSensor","value":4,93}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":79,94}
+• {"engine_microcontroller":"OilPressureSensor","value":4,84}
+• {"power_controller":"GeneratorCurrentSensor","value":43,79}
+• {"power_controller":"OilPressureSensor","value":3,63}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 16
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":26,21}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":74,27}
+• {"power_controller":"OilPressureSensor","value":3,67}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":7,48}
+• {"engine_microcontroller":"OilPressureSensor","value":4,77}
+• {"power_controller":"GeneratorCurrentSensor","value":47,26}
+• {"power_controller":"OilPressureSensor","value":4,93}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":79,94}
+• {"engine_microcontroller":"OilPressureSensor","value":4,84}
+• {"power_controller":"GeneratorCurrentSensor","value":43,79}
+• {"power_controller":"OilPressureSensor","value":3,63}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":99,08}
+• {"engine_microcontroller":"OilPressureSensor","value":3,62}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":3,66}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 20
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":26,21}
+• {"error":"engine_microcontroller":"Oil pressure sensor fault!","sensor":"OilPressureSensor"}
+• {"power_controller":"GeneratorCurrentSensor","value":74,27}
+• {"power_controller":"OilPressureSensor","value":3,67}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":7,48}
+• {"engine_microcontroller":"OilPressureSensor","value":4,77}
+• {"power_controller":"GeneratorCurrentSensor","value":47,26}
+• {"power_controller":"OilPressureSensor","value":4,93}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":79,94}
+• {"engine_microcontroller":"OilPressureSensor","value":4,84}
+• {"power_controller":"GeneratorCurrentSensor","value":43,79}
+• {"power_controller":"OilPressureSensor","value":3,63}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":99,08}
+• {"engine_microcontroller":"OilPressureSensor","value":3,62}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":3,66}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":42,46}
+• {"engine_microcontroller":"OilPressureSensor","value":3,28}
+• {"power_controller":"GeneratorCurrentSensor","value":77,57}
+• {"power_controller":"OilPressureSensor","value":2,81}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 4
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":90,54}
+• {"engine_microcontroller":"OilPressureSensor","value":2,09}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,42}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 8
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":90,54}
+• {"engine_microcontroller":"OilPressureSensor","value":2,09}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,42}
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":4,40}
+• {"power_controller":"GeneratorCurrentSensor","value":61,83}
+• {"power_controller":"OilPressureSensor","value":3,80}
+
+PredictLogAnalyzer make some predictions...
+=== Диагностический отчет ===
+Всего событий: 12
+
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":90,54}
+• {"engine_microcontroller":"OilPressureSensor","value":2,09}
+• {"error":"power_controller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"power_controller":"OilPressureSensor","value":5,42}
+• {"error":"engine_microcontroller":"Generator current fault!","sensor":"GeneratorCurrentSensor"}
+• {"engine_microcontroller":"OilPressureSensor","value":4,40}
+• {"power_controller":"GeneratorCurrentSensor","value":61,83}
+• {"power_controller":"OilPressureSensor","value":3,80}
+• {"engine_microcontroller":"GeneratorCurrentSensor","value":57,84}
+• {"engine_microcontroller":"OilPressureSensor","value":4,89}
+• {"power_controller":"GeneratorCurrentSensor","value":31,16}
+• {"power_controller":"OilPressureSensor","value":4,09}
+
+PredictLogAnalyzer make some predictions...

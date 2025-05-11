@@ -41,22 +41,23 @@ public abstract class DiagnosticSystem implements SystemFacade {
 
     // Реализация методов интерфейса SystemFacade
     @Override
-    public void startDiagnosticSession(int cycles) {
+    public void startDiagnosticSession() {
         System.out.println("\n=== Запуск диагностики ===");
-        for (int i = 0; i < cycles; i++) {
-            System.out.println("\nЦикл диагностики #" + (i+1));
-            for(Microcontroller controller:controllers){
-                controller.processSensorData();
-            }
-            canBus.processMessages();
-            try {
-                sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+        for(Microcontroller controller:controllers){
+            controller.processSensorData();
         }
+        canBus.processMessages();
+        try {
+            sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
+
+    public StorageDevice getStorage(){return storage;}
+    public LogAnalyzer getLogAnalyzer(){return logAnalyzer;}
     @Override
     public void saveResults(String filename) {
         try {

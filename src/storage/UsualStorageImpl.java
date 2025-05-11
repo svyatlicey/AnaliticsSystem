@@ -17,8 +17,12 @@ public class UsualStorageImpl implements StorageImpl {
             throw new StorageException("Директория не существует: " + path.getParent());
         }
         try {
-            // Записываем данные с перезаписью файла
-            Files.write(path, content.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+            Files.write(
+                    path,
+                    content.getBytes(),
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.APPEND,
+                    StandardOpenOption.WRITE);
         } catch (IOException e) {
             throw new StorageException("Ошибка записи в файл: " + filePath, e);
         }

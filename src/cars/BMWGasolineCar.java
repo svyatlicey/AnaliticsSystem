@@ -9,9 +9,9 @@ public class BMWGasolineCar extends GasolineCar {
     }
 
     @Override
-    public void performFullDiagnostic(int cycles) {
+    public void performFullDiagnostic() {
         System.out.println("=== BMW " + model + " (бензин) ===");
-        diagnosticSystem.startDiagnosticSession(cycles);
+        diagnosticSystem.startDiagnosticSession();
         diagnosticSystem.saveResults("diagnostics/ " + model + VIN +"report.txt");
     }
     @Override

@@ -90,7 +90,7 @@ public class EngineMicrocontroller implements Microcontroller {
 
     private void sendToBus(String sensorId, double value) {
         if (busDelegate.isConnected()) {
-            String message = String.format("{\"engine_sensor\":\"%s\",\"value\":%.2f}", sensorId, value);
+            String message = String.format("{\"engine_microcontroller\":\"%s\",\"value\":%.2f}", sensorId, value);
             busDelegate.send("MainAnalyzer", message);
         }
     }
@@ -98,7 +98,7 @@ public class EngineMicrocontroller implements Microcontroller {
     private void handleSensorError(String sensorId, SensorException e) {
         System.err.printf("[MCU] %s ошибка датчика %s: %s%n", getDeviceId(), sensorId, e.getMessage());
         if (busDelegate.isConnected()) {
-            String errorMsg = String.format("{\"error\":\"%s\",\"sensor\":\"%s\"}",
+            String errorMsg = String.format("{\"error\":\"engine_microcontroller\":\"%s\",\"sensor\":\"%s\"}",
                     e.getMessage(), sensorId);
             busDelegate.send("MainAnalyzer", errorMsg);
         }
