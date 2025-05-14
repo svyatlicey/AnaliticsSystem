@@ -61,6 +61,7 @@ public class AutoService {
     }
 
     private void processCar(Car car) {
+
         try (ServiceBox box = boxPool.acquireBox()) {
             System.out.println("Начато обслуживание " + car.getVIN());
             ComponentVisitor componentVisitor = new ComponentVisitor();
@@ -91,6 +92,8 @@ public class AutoService {
             }
         } catch (Exception e) {
             System.err.println("Ошибка обработки автомобиля: " + e.getMessage());
+        }finally{
+            boxPool.releaseBox(box);
         }
     }
 

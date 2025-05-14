@@ -4,10 +4,11 @@ package autoservice;
 public class ServiceBox implements AutoCloseable {
     private final int number;
     private boolean occupied;
-
-    public ServiceBox(int number) {
+    private final ServiceBoxPool serviceBoxPool;
+    public ServiceBox(int number,ServiceBoxPool serviceBoxPool) {
         this.number = number;
         this.occupied = false;
+        this.serviceBoxPool = serviceBoxPool;
     }
 
     public void occupy() {
@@ -17,6 +18,7 @@ public class ServiceBox implements AutoCloseable {
 
     public void release() {
         this.occupied = false;
+        serviceBoxPool.releaseBox(this);
         System.out.println("Бокс " + number + " освобожден");
     }
 

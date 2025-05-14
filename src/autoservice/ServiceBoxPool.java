@@ -16,7 +16,7 @@ public class ServiceBoxPool {
 
     private void initializeBoxes() {
         for (int i = 1; i <= totalBoxes; i++) {
-            availableBoxes.add(new ServiceBox(i));
+            availableBoxes.add(new ServiceBox(i,this));
         }
     }
 

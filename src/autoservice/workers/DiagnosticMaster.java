@@ -62,7 +62,7 @@ public class DiagnosticMaster extends Worker {
 
     private String buildLogFilePath(Car car) {
         return "diagnostics/"
-                + car.getModel().replace(" ", "_")
+                + car.getModel()
                 + car.getVIN()
                 + "_report.txt";
     }
